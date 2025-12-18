@@ -1,0 +1,71 @@
+<!Doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links to the home stylepage -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+      <div class="menu-btn-container">
+      <div class="menu-child-btn">
+        <a href="home.html">Home</a>
+      </div>
+      <div class="menu-child-btn">
+        <a href="contactus.html">Contact Us</a>
+      </div>
+      <div class="menu-child-btn">
+        <a href="#">Products & Services</a>
+      </div>
+    </div>
+    <div class="column-layout">
+      <div class="location">
+        <ul>
+          <li>
+           <h1>Location</h1>
+          </li>
+          <li>
+          <b>Pynselvenia 123 Peppa Pig St.</b>
+          </li>
+          <li>
+            <b>Phone:</b> 123-456-7890
+          </li>
+          <li>
+          <b>Email:</b> info@creativerealm.com
+          </li>
+        </ul>
+      </div>
+      <div class="hours">
+        <ul>
+        <li>
+           <h1>Hours of Operation</h1>
+        </li>
+          <li>
+            <b>Mon-Fri:</b> 24hr
+          </li>
+          <li>
+            <b>Sat-Sun:</b> CLOSED
+          </li>
+        </ul>
+      </div>
+    </div>
+    <form action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample" method="post">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </p>
+  <p>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_email" />
+  </p>
+  <p>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </p>
+</form>
+
+<p class="button">
+  <button type="submit">Send your message</button>
+</p>
+  </body>
+</html>
